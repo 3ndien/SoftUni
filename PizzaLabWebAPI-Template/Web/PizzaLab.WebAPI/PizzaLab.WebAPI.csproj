@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\PizzaLabWebAPI.Data\PizzaLabWebAPI.Data.csproj" />
+    <ProjectReference Include="..\..\Services\PizzaLabWebAPI.Services\PizzaLabWebAPI.Services.csproj" />
+    <ProjectReference Include="..\PizzaLab.WebAPI.Infrastructure\PizzaLab.WebAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\PizzaLab.WebAPI.ViewModels\PizzaLab.WebAPI.ViewModels.csproj" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.312" PrivateAssets="all">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

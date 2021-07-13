@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>_01_Class_Box</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="01_Class Box.zip" />
+  </ItemGroup>
+
+</Project>
